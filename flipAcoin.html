@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heads & Tails</title>
+    <link rel="stylesheet" href="flipAcoin.css">
+</head>
+<body>
+    <div class="center-cont">   
+        <button class="coins" onclick="
+            coinOutput();
+            playGame('Heads');
+            ">Heads</button>
+        <button class="coins" onclick="
+            coinOutput();
+            playGame('Tails');
+        ">Tails</button>
+    </div>
+    <p class="theResult"></p>
+    <p class="scores"></p>
+    <button class="js-reset" onclick="
+        reset();
+    ">Reset</button>
+    <script src="flipAcoin.js"></script>
+</body>
+</html>
